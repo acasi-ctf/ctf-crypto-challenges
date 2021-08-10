@@ -1,30 +1,16 @@
 from Crypto.Cipher import AES
-import random
+from Crypto.Random import get_random_bytes
 
 def key_gen() :
-    return random.getrandbits(128)
+    return get_random_bytes(16)
 
 def encrypt(key, msg, iv):
-    aes = AES.new(key, AES.MODE_CTR, initial_value=iv)
-    ciphertext = aes.encrypt(msg)
+    aes = AES.new(key, AES.MODE_CTR, initial_value=iv, nonce=b"0")
+    ciphertext = aes.encrypt(msg.encode("utf8"))
 
-    return ciphertext.hex()
+    return ciphertext
 
-def decrypt(key, cipher, iv):
-    aes =AES.new(key, AES.MODE_CTR, initial_value=iv)
-    plaintxt = aes.decrypt(cipher)
+def decrypt(key, cipher, iv, aes_algo):
+    plaintxt = aes_algo.decrypt(cipher)
 
     return plaintxt.decode("utf-8")
-
-# for testing purpose
-pt = "Hello, how is it going? Wanna get a drink?"
-key = key_gen()
-
-ci = encrypt(key, pt, 0)
-print(ci)
-
-de = decrypt(key, ci, 0)
-print(de)
-
-
-
