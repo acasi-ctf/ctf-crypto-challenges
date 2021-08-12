@@ -36,7 +36,7 @@ The challenges are divided based on their type/characteristic.
     2. Weakness (Using the same invitial value/vector)
     - Note: These 2 challenges work the best in web-interface
 
-  - #### Chaining Block Cipher (Not implemented)
+  - #### Cipher Block Chaining (Not implemented)
     1. Introdcution to the algorithm
     2. Padding and Padding Oracle Attack
         1. Similar to Meet in the middle attack, this requires a place for user to submit their answer and for them to write python code to break the encryption.
