@@ -5,7 +5,7 @@ Block Cipher is another symmetric encryption algorithm, it works by take a block
 # Block Cipher Example 
  For example, for a 3-bits block and 2-bits key 
  
-["Table"](table.png)
+!["Table"](table.png)
 
 Suppose our key = 01, message = 101, then the ciphertext = 100. 
 
