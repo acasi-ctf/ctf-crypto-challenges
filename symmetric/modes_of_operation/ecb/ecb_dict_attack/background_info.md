@@ -5,7 +5,7 @@ It leaves plaintext data patterns in the ciphertext and creates opportunities fo
 
 Typical example is encrypting images using ECB: 
 
-["ecbEncrypted"](ecbEncrypted.png)
+!["ecbEncrypted"](ecbEncrypted.png)
 
 
 Since the algorithm is deterministic, it is extremely easy to forge messages. 
