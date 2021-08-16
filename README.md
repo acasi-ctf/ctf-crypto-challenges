@@ -65,12 +65,12 @@ We have most of the documentation written. Some challenges are not implemented.
      - Challenges that let user to clear distinguish integrity from confidentiality  
 
   1. ### Message Authentication Code (MAC)
-     - Introduction to the idea
+     - Introduce the idea
   
   2. ### MAC of a variable length message
      - #### CBC MAC
-       - Introduction to the algorithm
-       - Break it by appending other messages
+       - Introduce the algorithm
+       - Break it by appending the same message
 
      - #### ECBC - MAC
        - Outline the differences between this and CBC MAC
