@@ -9,7 +9,7 @@ The challenges are divided based on their type/characteristic.
 ## Confidentiality:
 
 ### Symmetric Encryption 
-    We have all of the documentation written, some are not implemented
+We have most of the documentation written. Some challenges are not implemented.
 - #### One Time Pad (OTP)
   1. Introduction to the algorithm (Basic Encryption and Decryption)
   2. Problems/weakness (Using the same key twice)
